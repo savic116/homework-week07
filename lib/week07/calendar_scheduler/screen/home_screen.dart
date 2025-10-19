@@ -66,7 +66,12 @@ Widget build(BuildContext context) {
                 }
                 return ListView.builder(
                   itemCount: snapshot.data!.length,
-                  itemBuilder: (context, index),
+                  itemBuilder: (context, index){
+                    final schedule = snapshot.data![index];
+                    return Padding(
+                      padding: const Ed,
+                    )
+                  },
                 )
               },
             ),
