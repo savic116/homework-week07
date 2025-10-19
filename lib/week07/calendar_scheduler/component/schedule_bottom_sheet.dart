@@ -14,11 +14,15 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
   int? startTime;
   int? endTime;
   String? content;
-  
+
   @override
   Widget build(BuildContext context) {
     // 키보드 높이 가져오기
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
+    return Form(
+      key: formKey,
+      child: 
+    )
     return SafeArea(
       child: Container(
         height: MediaQuery.of(context).size.height / 2 + bottomInset,
