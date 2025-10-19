@@ -6,6 +6,10 @@ import 'package:get_it/get_it.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
 
-  await initiallize
+  await initiallizeDateFormatting();
+
+  final database = LocalDatabase();
+
+  GetIt.I.registerSingleton<LocalDatabase> database
 
 }
