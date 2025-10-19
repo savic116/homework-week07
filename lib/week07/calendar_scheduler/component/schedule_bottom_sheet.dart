@@ -38,6 +38,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                         onSaved: (String? val){
                           startTime = int.parse(val!);
                         },
+                        validator: timeValidator,
                       ),
                     ),
                     const SizedBox(width: 16.0),
