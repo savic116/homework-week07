@@ -102,10 +102,16 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
         return '0시부터 24시 사이를 입력해주세요';
       }
 
-      return null
+      return null;
     }
 
-    String? contentValidator(String? val){}
+    String? contentValidator(String? val){
+      if(val == null || val.length == 0){
+        return '값을 입력해주세요';
+      }
+
+      return null;
+    }
 
   }
 }
