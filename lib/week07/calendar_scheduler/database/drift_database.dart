@@ -13,4 +13,7 @@ part 'drift_database.g.dart'; // part 파일 지정
 class LocalDatabase extends _$LocalDatabase{
   Stream<List<Schedule>> watchSchedules(DateTime date) =>
     (select(Schedules)..where((tbl) => tbl.date.equals(date))).watch();
+  
+  Future<int> creatSchedule(SchedulesCompanion data) =>
+    into(schedules)
 }
