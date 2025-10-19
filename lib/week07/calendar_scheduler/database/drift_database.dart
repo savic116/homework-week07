@@ -1,2 +1,2 @@
-import 'package:myapp/week07/calendar_scheduler/model/schedule.dart';
+import 'package:myapp/week07/calendar_scheduler/'
 import 'package:drift/drift.dart';
