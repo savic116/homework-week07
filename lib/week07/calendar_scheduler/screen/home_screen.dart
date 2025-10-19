@@ -71,7 +71,8 @@ Widget build(BuildContext context) {
                   itemCount: snapshot.data!.length,
                   itemBuilder: (context, index){
                     final schedule = snapshot.data![index];
-                    return Padding(
+                    
+                    child: Padding(
                       padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                       child: ScheduleCard(
                         startTime: schedule.startTime,
@@ -83,7 +84,7 @@ Widget build(BuildContext context) {
                 );
               }
             ),
-          )
+          ),
           ScheduleCard(
             startTime: 12,
             endTime: 14,
