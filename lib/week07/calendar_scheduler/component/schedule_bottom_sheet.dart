@@ -35,6 +35,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                       child: CustomTextField(
                         label: '시작 시간',
                         isTime: true,
+                        onSaved: (String? val){
+                          startTime = int.parse(val!);
+                        },
                       ),
                     ),
                     const SizedBox(width: 16.0),
