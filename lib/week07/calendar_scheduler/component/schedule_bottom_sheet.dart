@@ -99,8 +99,10 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       }
 
       if (number < 0 || number > 24){
-        
+        return '0시부터 24시 사이를 입력해주세요';
       }
+
+      return null
     }
 
     String? contentValidator(String? val){}
