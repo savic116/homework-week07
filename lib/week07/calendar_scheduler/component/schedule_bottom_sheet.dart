@@ -99,8 +99,8 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
         SchedulesCompanion(
           startTime: Value(startTime!),
           endTime: Value(endTime!),
-          content: Value(startTime!),
-          startTime: Value(startTime!),
+          content: Value(content!),
+          date: Value(widget.selectedDate),
         )
       )
     }
