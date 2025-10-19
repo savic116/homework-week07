@@ -11,4 +11,3 @@ part 'drift_database.g.dart'; // part 파일 지정
 )
 
 class LocalDatabase extends _$LocalDatabase{}
-// code generation으로 생성할 클래스 상속
