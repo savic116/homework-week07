@@ -80,8 +80,8 @@ Widget build(BuildContext context) {
                       ),
                     );
                   },
-                )
-              },
+                );
+              }
             ),
           )
           ScheduleCard(
