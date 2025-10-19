@@ -71,7 +71,9 @@ Widget build(BuildContext context) {
                   itemCount: snapshot.data!.length,
                   itemBuilder: (context, index){
                     final schedule = snapshot.data![index];
-                    
+                    return Dismissible(
+                      key: 
+                    )
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                       child: ScheduleCard(
