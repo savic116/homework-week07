@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/week07/calendar_scheduler/component/main_calendar.dart';
+import 'package:myapp/week07/calendar_scheduler/model/schedule.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:myapp/week07/calendar_scheduler/component/schedule_card.dart';
 import 'package:myapp/week07/calendar_scheduler/component/today_banner.dart';
@@ -70,8 +71,12 @@ Widget build(BuildContext context) {
                     final schedule = snapshot.data![index];
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
-                      child: Sch,
-                    )
+                      child: ScheduleCard(
+                        startTime: schedule.startTime,
+                        endTime: schedule.endtTime,
+                        content: schedule.content,
+                      ),
+                    );
                   },
                 )
               },
