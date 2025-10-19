@@ -95,9 +95,14 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
     if(formKey.currentState!.validate()){
       formKey.currentState!.save();
 
-      print(startTime);
-      print(endTime);
-      print(content);
+      await GetIt.I<LocalDatabase>().creatSchedule(
+        SchedulesCompanion(
+          startTime: Value(startTime!),
+          endTime: Value(endTime!),
+          content: Value(startTime!),
+          startTime: Value(startTime!),
+        )
+      )
     }
     String? timeValidator(String? val){
       if (val == null){
