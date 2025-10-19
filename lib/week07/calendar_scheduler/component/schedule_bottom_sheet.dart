@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/week07/calendar_scheduler/component/custom_text_field.dart';
 import 'package:myapp/week07/calendar_scheduler/const/colors.dart';
 class ScheduleBottomSheet extends StatefulWidget{
+  final DateTime selectedDate;
+  
   const ScheduleBottomSheet({Key? key}) : super(key: key);
 
   @override
