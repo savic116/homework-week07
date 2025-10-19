@@ -11,5 +11,6 @@ part 'drift_database.g.dart'; // part 파일 지정
 )
 
 class LocalDatabase extends _$LocalDatabase{
-  Stream<List<Schedule>> watchSchedules()
+  Stream<List<Schedule>> watchSchedules(DataTime date) =>
+    (select(Schedules)..where())
 }
