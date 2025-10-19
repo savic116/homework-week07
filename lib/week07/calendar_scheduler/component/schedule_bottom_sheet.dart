@@ -91,6 +91,10 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       }
 
       int? number;
+
+      try{
+        number = int.parse(val);
+      }
     }
 
     String? contentValidator(String? val){}
