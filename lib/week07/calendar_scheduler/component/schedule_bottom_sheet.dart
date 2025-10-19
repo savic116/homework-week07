@@ -95,7 +95,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
     if(formKey.currentState!.validate()){
       formKey.currentState!.save();
 
-      await GetIt.I<LocalDatabase>().creatSchedule(
+      await GetIt.I<LocalDatabase>().createSchedule(
         SchedulesCompanion(
           startTime: Value(startTime!),
           endTime: Value(endTime!),
