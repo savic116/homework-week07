@@ -58,12 +58,12 @@ Widget build(BuildContext context) {
           StreamBuilder<List<Schedule>>(
             stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
             builder: (context, snapshot){
-              
-            },
-          )
-          TodayBanner(
-            selectedDate: selectedDate,
-            count: 0,
+              return TodayBanner(
+                        selectedDate: selectedDate,
+                        count: 0,
+                      );
+
+            }
           ),
           SizedBox(height: 8.0,),
           Expanded(
