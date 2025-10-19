@@ -6,6 +6,6 @@ import 'package:get_it/get_it.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
 
-  await init
+  await initiallize
 
 }
