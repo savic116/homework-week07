@@ -88,7 +88,7 @@ Widget build(BuildContext context) {
                       padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                       child: ScheduleCard(
                         startTime: schedule.startTime,
-                        endTime: schedule.endtTime,
+                        endTime: schedule.endTime,
                         content: schedule.content,
                       ),
                     ),
