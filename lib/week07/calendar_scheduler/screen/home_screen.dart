@@ -78,7 +78,6 @@ Widget build(BuildContext context) {
                       onDismissed: (DismissDirection direction){
                         GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
                       },
-                    )
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                       child: ScheduleCard(
@@ -86,6 +85,7 @@ Widget build(BuildContext context) {
                         endTime: schedule.endtTime,
                         content: schedule.content,
                       ),
+                    ),
                     );
                   },
                 );
