@@ -19,7 +19,18 @@ class CustomTextField extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(
+          flex: isTime ? 0 : 1,
+          child: TextFormField(
+            onSaved: onSaved,
+            validator: validator,
+            cursorColor: Colors.grey,
+          ),
+        ),
+      ],
+    );
   }
 }
