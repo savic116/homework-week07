@@ -69,7 +69,7 @@ Widget build(BuildContext context) {
                   itemBuilder: (context, index){
                     final schedule = snapshot.data![index];
                     return Padding(
-                      padding: const Ed,
+                      padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                     )
                   },
                 )
