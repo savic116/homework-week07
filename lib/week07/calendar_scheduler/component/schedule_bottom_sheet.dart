@@ -101,8 +101,10 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
           endTime: Value(endTime!),
           content: Value(content!),
           date: Value(widget.selectedDate),
-        )
-      )
+        ),
+      );
+
+      Navigator.of(context).pop();
     }
     String? timeValidator(String? val){
       if (val == null){
