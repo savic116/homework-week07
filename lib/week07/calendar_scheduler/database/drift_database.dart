@@ -10,7 +10,7 @@ import 'dart:io';
 part 'drift_database.g.dart'; // part 파일 지정
 
 @DriftDatabase(
-  table: [
+  tables: [
     Schedules,
   ],
 )
